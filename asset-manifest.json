@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/entertainment-reactapp/login/static/css/main.af4577af.css",
-    "main.js": "/entertainment-reactapp/login/static/js/main.27519ba1.js",
+    "main.js": "/entertainment-reactapp/login/static/js/main.a469398a.js",
     "static/js/787.bcd49686.chunk.js": "/entertainment-reactapp/login/static/js/787.bcd49686.chunk.js",
     "index.html": "/entertainment-reactapp/login/index.html",
     "static/media/logo.svg": "/entertainment-reactapp/login/static/media/logo.7d4aedc9f44f15655a966567c57a1f37.svg",
     "main.af4577af.css.map": "/entertainment-reactapp/login/static/css/main.af4577af.css.map",
-    "main.27519ba1.js.map": "/entertainment-reactapp/login/static/js/main.27519ba1.js.map",
+    "main.a469398a.js.map": "/entertainment-reactapp/login/static/js/main.a469398a.js.map",
     "787.bcd49686.chunk.js.map": "/entertainment-reactapp/login/static/js/787.bcd49686.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af4577af.css",
-    "static/js/main.27519ba1.js"
+    "static/js/main.a469398a.js"
   ]
 }
