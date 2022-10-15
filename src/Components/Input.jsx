@@ -1,11 +1,10 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 export default function Input(props) {
-  const [color,setColor] = useState('')
   let input = useRef()
   function click() {
     if (props.placeholder === input.current.value) {
       input.current.value = ''
-      input.current.id ='input-active'
+      input.current.id = 'input-active'
     }
   }
   return (
