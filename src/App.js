@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="container">
       <Routes>
-        <Route path="/entertainment-reactapp/" element={<Login />}/>
+        <Route path="/entertainment-reactapp/login" element={<Login />}/>
         <Route path="/entertainment-reactapp/register" element={<Register />} />
       </Routes>
     </div>
