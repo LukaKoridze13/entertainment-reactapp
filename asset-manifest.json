@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/entertainment-reactapp/login/static/css/main.af4577af.css",
-    "main.js": "/entertainment-reactapp/login/static/js/main.a469398a.js",
-    "static/js/787.bcd49686.chunk.js": "/entertainment-reactapp/login/static/js/787.bcd49686.chunk.js",
-    "index.html": "/entertainment-reactapp/login/index.html",
-    "static/media/logo.svg": "/entertainment-reactapp/login/static/media/logo.7d4aedc9f44f15655a966567c57a1f37.svg",
-    "main.af4577af.css.map": "/entertainment-reactapp/login/static/css/main.af4577af.css.map",
-    "main.a469398a.js.map": "/entertainment-reactapp/login/static/js/main.a469398a.js.map",
-    "787.bcd49686.chunk.js.map": "/entertainment-reactapp/login/static/js/787.bcd49686.chunk.js.map"
+    "main.css": "/entertainment-reactapp/static/css/main.af4577af.css",
+    "main.js": "/entertainment-reactapp/static/js/main.fa0a4bcb.js",
+    "static/js/787.bcd49686.chunk.js": "/entertainment-reactapp/static/js/787.bcd49686.chunk.js",
+    "index.html": "/entertainment-reactapp/index.html",
+    "static/media/logo.svg": "/entertainment-reactapp/static/media/logo.7d4aedc9f44f15655a966567c57a1f37.svg",
+    "main.af4577af.css.map": "/entertainment-reactapp/static/css/main.af4577af.css.map",
+    "main.fa0a4bcb.js.map": "/entertainment-reactapp/static/js/main.fa0a4bcb.js.map",
+    "787.bcd49686.chunk.js.map": "/entertainment-reactapp/static/js/787.bcd49686.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af4577af.css",
-    "static/js/main.a469398a.js"
+    "static/js/main.fa0a4bcb.js"
   ]
 }
