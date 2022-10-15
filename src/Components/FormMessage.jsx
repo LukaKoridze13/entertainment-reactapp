@@ -6,6 +6,6 @@ export default function FormMessage(props) {
     if (props.type === 'Login') {
         return <p onClick={() => { navigate('/entertainment-reactapp/register') }} className='formMessage'>Don’t have an account? <span >Sign Up</span></p>
     } else {
-        return <p onClick={() => { navigate('/entertainment-reactapp/login') }} className='formMessage'>Don’t have an account? <span >Login</span></p>
+        return <p onClick={() => { navigate('/entertainment-reactapp/') }} className='formMessage'>Don’t have an account? <span >Login</span></p>
     }
 }
