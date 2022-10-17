@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import Form from '../Components/Form'
 import FormMessage from '../Components/FormMessage'
 import Logo from '../Components/Logo'
-import { getUsers } from '../LocalStorage'
+import { checkLogin, getUsers, logIn } from '../LocalStorage'
 import Swal from 'sweetalert2'
 import Input from '../Components/Input'
 import Button from '../Components/Button'
@@ -21,7 +21,7 @@ export default function Login() {
   function submit() {
     let logged = false;
     let wrongPassword = true;
-    if (users === []) {
+    if (users.length===0) {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
@@ -42,6 +42,7 @@ export default function Login() {
         
       })
       if (logged) {
+        logIn();
         navigate('/entertainment-reactapp/home')
       } else if (wrongPassword) {
         Swal.fire({
@@ -58,6 +59,11 @@ export default function Login() {
       }
     }
   }
+  useEffect(() => {
+    if (checkLogin()) {
+      navigate('/entertainment-reactapp/home')
+    }
+  })
   useEffect(() => {
     setUsers(getUsers());
   }, [email,password])

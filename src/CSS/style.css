@@ -113,4 +113,8 @@ form h1 {
   font-size: 15px;
   line-height: 19px;
   color: #FC4747;
+}
+
+.active svg path {
+  fill: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

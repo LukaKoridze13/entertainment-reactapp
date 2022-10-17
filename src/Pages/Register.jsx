@@ -4,7 +4,7 @@ import Logo from '../Components/Logo'
 import FormMessage from '../Components/FormMessage'
 import Input from '../Components/Input'
 import Button from '../Components/Button'
-import { checkUser, createUser } from '../LocalStorage'
+import { checkLogin, checkUser, createUser, logIn } from '../LocalStorage'
 import { useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
 
@@ -25,9 +25,15 @@ export default function Register() {
             })
         } else {
             createUser(email, password)
+            logIn()
             navigate('/entertainment-reactapp/home')
         }
     }
+    useEffect(() => {
+        if (checkLogin()) {
+            navigate('/entertainment-reactapp/home')
+        }
+    })
     useEffect(() => {
         password !== 'Password' && (setType('password'))
         repeatPassword !== 'Repeat password' && (setTypeRep('password'))

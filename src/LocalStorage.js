@@ -15,11 +15,27 @@ export const createUser = (email, password) => {
 
 export const checkUser = (email) => {
     let users = getUsers();
-    let exists=false;
-    users.forEach((user)=>{
+    let exists = false;
+    users.forEach((user) => {
         user.email === email && (exists = true);
     })
-    if(exists){
+    if (exists) {
+        return true
+    } else {
+        return false
+    }
+}
+
+export const logIn = () => {
+    localStorage.setItem('ent-lk-log', 'logged')
+}
+
+export const logOut = () => {
+    localStorage.setItem('ent-lk-log', 'logged')
+}
+
+export const checkLogin = () => {
+    if(localStorage.getItem('ent-lk-log') === 'logged'){
         return true
     }else{
         return false
