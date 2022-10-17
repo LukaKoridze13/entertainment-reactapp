@@ -8,9 +8,11 @@
     min-height: 100vh;
     margin: 0 auto;
     background-color: #10141E;
-    overflow: auto;
+    overflow: hidden;
 }
-
+*{
+    user-select: none;
+}
 // Logo
 #logo {
     display: block;
@@ -19,7 +21,7 @@
 }
 
 // Form
-form {
+.reglog {
     width: 87%;
     max-width: 400px;
     background: #161D2F;
@@ -116,7 +118,8 @@ form {
     font-size: 15px;
     line-height: 19px;
     color: #FFFFFF;
-        cursor: pointer;
+    cursor: pointer;
+
     span {
         font-family: 'Outfit';
         font-style: normal;
@@ -127,11 +130,140 @@ form {
     }
 }
 
-.active svg path{
-    fill: #FFFFFF;
+.active svg path {
+    fill: #FFFFFF !important;
 }
 
 // Navigation
-nav{
-    
+nav {
+    width: fit-content;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #161D2F;
+    border-radius: 20px;
+    margin: 0 32px;
+    padding: 32px;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+        align-items: center;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    #logo {
+        margin-top: 0px;
+    }
+
+    svg {
+        path {
+            &:hover {
+                fill: #FC4747;
+            }
+        }
+    }
+}
+
+// Home 
+.home {
+    display: flex;
+    padding-top: 5vh;
+
+    .right {
+        width: 100%;
+    }
+}
+
+// Search
+.search {
+    display: flex;
+    justify-content: flex-start;
+    gap: 27px;
+
+    label {
+        height: 38px;
+        cursor: pointer;
+
+        img {
+            width: 27px;
+            height: 27px;
+            margin-top: 5px;
+        }
+    }
+
+    input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        font-family: 'Outfit';
+        font-weight: 300;
+        line-height: 24px;
+        font-size: 24px;
+        color: white;
+        padding-bottom: 14px;
+        caret-color: #FC4747;
+
+        &:focus {
+            outline: none;
+            border-bottom: 1px solid #5A698F;
+        }
+    }
+}
+
+
+
+// landing
+.landing {
+    h1 {
+        margin-top: 35px;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.5px;
+        color: #FFFFFF;
+    }
+}
+.swiper{
+    margin-top: 25px !important;
+}
+.swiper-slide{
+    box-sizing: border-box !important;
+    width: 470px !important;
+}
+.trendingCard{
+    width: 470px;
+    height: 230px;
+    color: white;
+    border-radius: 8px;
+    background-size: contain;
+    padding: 16px 24px 24px 24px;
+    img{
+        width: 32px;
+        height: 32px;
+        padding: 9px;
+        background-color: rgba(16, 20, 30, 0.5);
+        border-radius: 50%;
+        float: right;
+    }
+}
+
+
+
+// info box
+#info-box{
+    width:fit-content;
+    display: flex;
+    justify-content:center;
 }
