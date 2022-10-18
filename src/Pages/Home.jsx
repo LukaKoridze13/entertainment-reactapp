@@ -7,7 +7,7 @@ import { checkLogin } from '../LocalStorage'
 export default function Home() {
     let navigate = useNavigate()
     const [search, setSearch] = useState('Search for movies or TV series')
-    function change(event){
+    function change(event) {
         setSearch(event.target.value)
     }
     useEffect(() => {
@@ -17,9 +17,11 @@ export default function Home() {
     })
     return (
         <div className="home">
-            <Navigation />
+            <div className="left">
+                <Navigation />
+            </div>
             <div className="right">
-                <Search search={search} setSearch={setSearch} onClick={() => { search === 'Search for movies or TV series' && setSearch('') }} onChange={change}/>
+                <Search search={search} setSearch={setSearch} onClick={() => { search === 'Search for movies or TV series' && setSearch('') }} onChange={change} />
                 <Outlet />
             </div>
         </div>

@@ -11,7 +11,7 @@ export default function Card(props) {
     return (
         <div className='card'>
             <div className="trendingCard" style={{ backgroundImage: `url(${image})` }}>
-                <AddBookmark title={props.movie.title} isBookmarked={props.movie.isBookmarked} />
+                <AddBookmark margin='15px 15px 0px 0px' title={props.movie.title} isBookmarked={props.movie.isBookmarked} ren={props.ren} setRen={props.setRen} />
             </div>
             <InfoBox movie={props.movie} marginTop='8px' />
         </div>

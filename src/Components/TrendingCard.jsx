@@ -11,7 +11,7 @@ export default function TrendingCard(props) {
     }, [props.movie.title])
     return (
         <div className="trendingCard" style={{ backgroundImage: `url(${image})` }}>
-            <AddBookmark title={props.movie.title} isBookmarked={props.movie.isBookmarked}/>
+            <AddBookmark title={props.movie.title} isBookmarked={props.movie.isBookmarked} ren={props.ren} setRen={props.setRen} />
             <InfoBox movie={props.movie} marginTop='145px' />
         </div>
     )
