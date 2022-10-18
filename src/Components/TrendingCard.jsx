@@ -5,14 +5,16 @@ import InfoBox from './InfoBox'
 export default function TrendingCard(props) {
     const [image, setImage] = useState(null)
     useEffect(() => {
-        let name = props.movie.title.toLowerCase().replaceAll(' ','-')
+        let name = props.movie.title.toLowerCase().replaceAll(' ', '-')
         let photo = require(`../assets/thumbnails/${name}/trending/large.jpg`)
         setImage(photo)
     }, [])
     return (
-        <div className="trendingCard" style={{backgroundImage: `url(${image})`}}>
-            <img src={BE} alt="Bookmark" />
-            <InfoBox movie={props.movie}/>
+        <div className="trendingCard" style={{ backgroundImage: `url(${image})` }}>
+            <div className="img">
+                <img src={BE} alt="Bookmark" />
+            </div>
+            <InfoBox movie={props.movie} />
         </div>
     )
 }
