@@ -42,7 +42,7 @@ export default function Login() {
         
       })
       if (logged) {
-        logIn();
+        logIn(email);
         navigate('/entertainment-reactapp/home')
       } else if (wrongPassword) {
         Swal.fire({

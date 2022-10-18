@@ -25,7 +25,7 @@ export default function Register() {
             })
         } else {
             createUser(email, password)
-            logIn()
+            logIn(email)
             navigate('/entertainment-reactapp/home')
         }
     }

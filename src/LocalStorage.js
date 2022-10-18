@@ -1,4 +1,3 @@
-
 export const getUsers = () => {
     if (localStorage.getItem('ent-lk') !== null) {
         return JSON.parse(localStorage.getItem('ent-lk'))
@@ -12,7 +11,6 @@ export const createUser = (email, password) => {
     users.push({ email: email, password: password });
     localStorage.setItem('ent-lk', JSON.stringify(users));
 }
-
 export const checkUser = (email) => {
     let users = getUsers();
     let exists = false;
@@ -25,19 +23,45 @@ export const checkUser = (email) => {
         return false
     }
 }
-
-export const logIn = () => {
+export const logIn = (email) => {
     localStorage.setItem('ent-lk-log', 'logged')
+    let users = getUsers();
+    users.forEach((user) => {
+        user.email === email && (user.logged = true);
+    })
+    localStorage.setItem('ent-lk', JSON.stringify(users));
 }
-
 export const logOut = () => {
     localStorage.setItem('ent-lk-log', 'logged')
 }
-
 export const checkLogin = () => {
-    if(localStorage.getItem('ent-lk-log') === 'logged'){
+    if (localStorage.getItem('ent-lk-log') === 'logged') {
         return true
-    }else{
+    } else {
         return false
     }
+}
+export const getUserMovies = (movies) => {
+    let users = getUsers()
+    let online = users.find((user) => {
+        return user.logged = true
+    })
+    if (online === undefined) {
+        return movies
+    } else {
+        if (online.movies === undefined) {
+            return movies
+        } else {
+            return online.movies
+        }
+    }
+}
+export const setUserMovies = (movies) => {
+    let users = getUsers()
+    users.forEach((user) => {
+        if (user.logged === true) {
+            user.movies = movies
+        }
+    })
+    localStorage.setItem('ent-lk', JSON.stringify(users));
 }
