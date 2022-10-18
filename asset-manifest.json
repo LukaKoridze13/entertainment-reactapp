@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/entertainment-reactapp/static/css/main.a8f18bc8.css",
-    "main.js": "/entertainment-reactapp/static/js/main.f4b29ea8.js",
+    "main.css": "/entertainment-reactapp/static/css/main.59485dfa.css",
+    "main.js": "/entertainment-reactapp/static/js/main.567169af.js",
     "static/js/787.bcd49686.chunk.js": "/entertainment-reactapp/static/js/787.bcd49686.chunk.js",
-    "static/media/large.jpg": "/entertainment-reactapp/static/media/large.000c4fa30a48cdfe80c1.jpg",
+    "static/media/large.jpg": "/entertainment-reactapp/static/media/large.7dbbfd3564efbdd81ccf.jpg",
     "index.html": "/entertainment-reactapp/index.html",
+    "static/media/icon-category-movie.svg": "/entertainment-reactapp/static/media/icon-category-movie.6861d0ce9036ac864b87dc5aff6570c3.svg",
     "static/media/icon-bookmark-full.svg": "/entertainment-reactapp/static/media/icon-bookmark-full.361afed00144e45cd54d64697d9a877d.svg",
     "static/media/icon-search.svg": "/entertainment-reactapp/static/media/icon-search.cbc8d670ebd27b023c9868d5850d79c5.svg",
     "static/media/logo.svg": "/entertainment-reactapp/static/media/logo.7d4aedc9f44f15655a966567c57a1f37.svg",
+    "static/media/icon-category-tv.svg": "/entertainment-reactapp/static/media/icon-category-tv.75c9208553d35303e2f1b61b511ab387.svg",
     "static/media/icon-bookmark-empty.svg": "/entertainment-reactapp/static/media/icon-bookmark-empty.20ce7177c045bbdbd7948bd9b4220c58.svg",
-    "main.a8f18bc8.css.map": "/entertainment-reactapp/static/css/main.a8f18bc8.css.map",
-    "main.f4b29ea8.js.map": "/entertainment-reactapp/static/js/main.f4b29ea8.js.map",
+    "main.59485dfa.css.map": "/entertainment-reactapp/static/css/main.59485dfa.css.map",
+    "main.567169af.js.map": "/entertainment-reactapp/static/js/main.567169af.js.map",
     "787.bcd49686.chunk.js.map": "/entertainment-reactapp/static/js/787.bcd49686.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8f18bc8.css",
-    "static/js/main.f4b29ea8.js"
+    "static/css/main.59485dfa.css",
+    "static/js/main.567169af.js"
   ]
 }
