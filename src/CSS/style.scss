@@ -151,6 +151,11 @@ nav {
     border-radius: 20px;
     padding: 32px;
 
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
     .left {
         display: flex;
         flex-direction: column;
@@ -337,11 +342,7 @@ nav {
 }
 
 #recommendeds {
-    .containerBox {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 280px);
-        grid-gap: 40px 32px;
-    }
+
 
     h2 {
         width: fit-content;
@@ -350,4 +351,168 @@ nav {
 
 .swiper-slide {
     width: fit-content !important;
+    height: fit-content !important;
+}
+
+
+.movies {
+    h1 {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.5px;
+        color: #FFFFFF;
+
+        margin-top: 35px;
+        margin-bottom: 38px;
+    }
+}
+
+.containerBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    grid-gap: 40px 32px;
+}
+
+.logout {
+    width: 70px;
+    height: 30px;
+    background-color: #FC4747;
+    font-family: 'Outfit';
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-bottom: 3px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+
+        .left {
+            width: 100%;
+            height: fit-content;
+            padding: 0px;
+            align-items: center;
+
+            nav {
+                flex-direction: row;
+                width: 100%;
+                height: fit-content;
+                justify-content: space-between;
+                align-items: center;
+
+                .left {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 65%;
+
+                    #logo {
+                        margin: 0px;
+                    }
+
+                    .icons {
+                        flex-direction: row;
+                    }
+                }
+
+                div {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .right {
+            margin-left: 10%;
+            width: 90%;
+            padding-right: 0px;
+        }
+    }
+
+    .logout {
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    #logo {
+        width: 25px;
+        height: 20px;
+
+    }
+
+    .containerBox {
+        padding-right: 20px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    nav {
+        .left {
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+        .icons {
+            width: fit-content;
+            gap: 20px;
+        }
+    }
+
+    .logout {
+        width: 50px;
+        font-size: 10px;
+    }
+
+    .search {
+        width: 100%;
+        margin-right: 0px;
+
+        img {
+            width: 25px !important;
+            height: 25px !important;
+            margin-top: 0px !important;
+        }
+
+        #search {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+    h1{
+        font-size: 20px !important;
+    }
+    .swiper-slide{
+        .trendingCard{
+            width: 240px;
+            height: 140px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            #info-box{
+                margin-top: 70px !important;
+                p{
+                    font-size: 12px;
+                }
+                h2{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .containerBox{
+        grid-template-columns: repeat(auto-fill,164px);
+    }
+    .card{
+        width: 164px;
+        height: 110px;
+        background-size: cover;
+    }
 }

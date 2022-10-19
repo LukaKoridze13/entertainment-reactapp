@@ -14,6 +14,7 @@ import {  getUserMovies, setUserMovies } from "./LocalStorage";
 import { Context } from './Context'
 function App() {
   const [movies, setMovies] = useState(data)
+  const [search, setSearch] = useState('Search for movies or TV series')
   function addToBookmarks(movieTitle) {
     let newMovies = movies.map((movie)=>{
       if(movie.title === movieTitle){
@@ -43,7 +44,7 @@ function App() {
     setMovies(bookmarked);
   }, [])
   return (
-    <Context.Provider value={{ movies, addToBookmarks, removeFromBookmarks }}>
+    <Context.Provider value={{ movies, addToBookmarks, removeFromBookmarks,search,setSearch }}>
       <div className="container">
         <Routes>
           <Route path="/entertainment-reactapp/" element={<Login />} />

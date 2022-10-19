@@ -32,7 +32,12 @@ export const logIn = (email) => {
     localStorage.setItem('ent-lk', JSON.stringify(users));
 }
 export const logOut = () => {
-    localStorage.setItem('ent-lk-log', 'logged')
+    localStorage.setItem('ent-lk-log', 'not logged')
+    let users = getUsers();
+    users.forEach((user) => {
+        user.logged = false;
+    })
+    localStorage.setItem('ent-lk', JSON.stringify(users));
 }
 export const checkLogin = () => {
     if (localStorage.getItem('ent-lk-log') === 'logged') {
