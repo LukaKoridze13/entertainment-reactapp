@@ -512,7 +512,9 @@ nav {
     }
     .card{
         width: 164px;
-        height: 110px;
-        background-size: cover;
+        background-size: contain;
+        .trendingCard{
+            height: 110px;
+        }
     }
 }
