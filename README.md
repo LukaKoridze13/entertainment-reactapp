@@ -1,4 +1,4 @@
-#  Todo app
+#  Movies Entertainment Web App
 ## Table of contents
 
 - [Overview](#overview)
